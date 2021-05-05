@@ -1,0 +1,76 @@
+/******* RESET ********/
+
+:root {
+  --blue: #33C2FF;
+  --black-light: #4C4C4C;
+  --blue-light: #ACE3FB;
+  --white-light: #F6F5F5;
+  --white-700: #FBFBFB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body{
+  background-color: #F3F3F3;
+}
+
+input, textarea, button {
+  font: 400 1rem;
+}
+
+h1 {
+  font-size: 500;
+  color: var(--blue);
+  font-size: 1.5rem;
+}
+
+button {
+  cursor: pointer;
+}
+
+/******* UTILITARIOS ********/
+
+/* .container {
+
+} */
+
+
+
+.menu-horizontal {
+  background: white;
+  width: calc(100% - 4rem);
+  height: 4rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.menu-vertical {
+  background: white;
+  height: 100%;
+  width: 4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
