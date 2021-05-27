@@ -21,7 +21,15 @@ html {
 
 body {
   background-color: #f3f3f3;
+}
+
+.layout {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem 2rem;
+  justify-content: center;
+  align-items: center;
 }
 
 input,
@@ -30,7 +38,7 @@ button {
   font: 400 1rem;
 }
 
-h1 {
+.title {
   font-weight: 500;
   color: var(--blue);
   font-size: 3rem;
@@ -55,12 +63,15 @@ ul {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.05));
   width: calc(100% - 6.1rem);
   margin-left: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .c-header {
   max-width: 1200px;
   margin: 0 auto;
-  height: 6rem;
+  height: 8.3vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +80,7 @@ ul {
 /******* MENU VERTICAL ********/
 .menu-vertical {
   background-color: white;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 6rem;
@@ -91,4 +102,22 @@ ul {
 
 .logo {
   padding-top: 2rem;
+}
+
+/******* CALCULAR VALORES BOLSAS ********/
+
+.c-calc {
+  width: 1100px;
+  padding: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fbfbfb;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
 }
